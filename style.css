@@ -1,0 +1,30 @@
+.container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container label {
+    display: block;
+    margin-top: 10px;
+}
+
+.container input[type="text"],
+.container textarea {
+    width: 100%;
+}
+
+.container input[type="submit"] {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
