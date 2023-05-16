@@ -1,0 +1,14 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $to = $_POST["to"];
+    $subject = $_POST["subject"];
+    $message = $_POST["message"];
+    $headers = "From: mdfarshadrashid"; // Replace with your email address or a valid sender address
+
+    if (mail($to, $subject, $message, $headers)) {
+        echo "Email sent successfully!";
+    } else {
+        echo "Failed to send email.";
+    }
+}
+?>
