@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mail Sender</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mail Sender</h1>
+        <form action="sendmail.php" method="post">
+            <label for="to">To:</label>
+            <input type="text" name="to" id="to" required>
+            <label for="subject">Subject:</label>
+            <input type="text" name="subject" id="subject" required>
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" rows="5" required></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</body>
+</html>
