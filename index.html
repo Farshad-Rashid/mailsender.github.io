@@ -3,13 +3,14 @@
 <head>
     <title>Mail Sender</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>Mail Sender</h1>
-        <form action="sendmail.php" method="post">
+        <form onsubmit="sendEmail(event)">
             <label for="to">To:</label>
-            <input type="text" name="to" id="to" required>
+            <input type="email" name="to" id="to" required>
             <label for="subject">Subject:</label>
             <input type="text" name="subject" id="subject" required>
             <label for="message">Message:</label>
